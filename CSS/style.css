@@ -1,0 +1,122 @@
+* {
+    overflow: wrap;
+    word-wrap: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: url(/images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+}
+
+.main {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.content {
+    top: 272px;
+    left: 162px;
+    position: relative;
+    overflow: hidden;
+    color: white;
+}
+
+b {
+    font-size: 42px;
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: relative;
+    top: 172px;
+    left: 229px;
+}
+
+.form-section span {
+    background-color: hsl(248, 32%, 49%);
+    border-radius: 5px;
+    display: inline-block;
+    height: 30px;
+    width: 400px;
+    text-align: center;
+    padding: 12px 2px 0px 12px;
+}
+
+.form-box {
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+    margin-top: 12px;
+    background-color: white;
+    border-radius: 8px;
+    height: 22rem;
+    width: 25.5rem;
+}
+
+.form-box input {
+    padding: 8px;
+    margin: 13px;
+    align-items: center;
+    border-radius: 5px;
+    border-width: 0.5px;
+    width: 17rem;
+}
+
+.form-box input:active {
+    border-radius: 5px;
+    border-width: 0.5px;
+    border-color: hsl(249, 50%, 42%);
+}
+
+#btn {
+    height: 2.8rem;
+    width: 21.3rem;
+    border-width: 0.5px;
+    background-color: hsl(154, 59%, 51%);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 13px;
+}
+
+em {
+    color: hsl(0, 100%, 74%);
+}
+
+@media screen and (max-width:375px) {
+    .main {
+        display: block;
+        position: absolute;
+        height: 1rem;
+    }
+    .content {
+        display: block;
+        position: relative;
+        top: 55px;
+        left: 11px;
+    }
+    .form-section {
+        position: relative;
+        top: 75px;
+        left: 0px;
+        height: auto;
+    }
+    .form-section span {
+        height: 2rem;
+        width: auto;
+    }
+    .form-box {
+        padding: 0px;
+        width: auto;
+    }
+    #btn {
+        width: auto;
+    }
+    .form-box input {
+        width: auto;
+    }
+}
